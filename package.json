@@ -1,25 +1,31 @@
 {
-  "name": "default",
+  "name": "fis-mvc",
   "version": "1.0.0",
-  "description": "Default template for fis scaffold",
+  "description": "fis-mvc based on fis3",
   "main": "index.js",
+  "bin": {
+    "fis-mvc": "fis-mvc.js"
+  },
+  "dependencies": {
+    "fis3": "^3.4.0-beta.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fis-scaffold/default.git"
+    "url": "git+https://github.com/fis-mvc/fis-mvc.git"
   },
   "keywords": [
     "fis",
-    "scaffold"
+    "aspnet",
+    "mvc"
   ],
-  "author": "fex",
-  "license": "BSD",
+  "author": "hingsir",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fis-scaffold/default/issues"
+    "url": "https://github.com/fis-mvc/fis-mvc/issues"
   },
-  "homepage": "https://github.com/fis-scaffold/default",
-  "dependencies": {
-  }
+  "homepage": "https://github.com/fis-mvc/fis-mvc#readme"
 }
