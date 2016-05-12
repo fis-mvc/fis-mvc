@@ -4,9 +4,10 @@
   "description": "fis-mvc based on fis3",
   "main": "index.js",
   "bin": {
-    "fis-mvc": "fis-mvc.js"
+    "fis-mvc": "bin/fis-mvc.js"
   },
   "dependencies": {
+    "fis-mvc-command-init": "^1.0.0",
     "fis3": "^3.4.0-beta.1"
   },
   "devDependencies": {},

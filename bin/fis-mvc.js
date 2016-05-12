@@ -27,12 +27,10 @@ cli.launch({
   // 然后才是全局环境下面安装的 fis3 目录里面的 node_modules
   fis.require.paths.push(path.join(env.cwd, 'node_modules/fis-mvc'));
   fis.require.paths.push(path.join(path.dirname(__dirname)));
-  fis.cli.name = this.name;
 
-  var cmdName = argv._[0];
-  if('init' === cmdName){
-      console.log('run fis-mvc-command-init');
-  }else{
-     fis.cli.run(argv, env);
-  }
+  //优先fis-mvc-command
+  fis.require.prefixes = ['fis-mvc', 'fis3', 'fis'];
+
+  fis.cli.name = this.name;
+  fis.cli.run(argv, env);
 });
